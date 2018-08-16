@@ -8,10 +8,12 @@
     "build-task:autoprefixer": "postcss dist/css/*.css --use autoprefixer -d dist/css",
     "sync-test": "sync-files dist W:\\inetpub\\test.hki.com\\hki-sitefinity-theme\\dist",
     "sync-live": "sync-files dist A:\\hki-sitefinity-theme\\dist",
+    "sync-theme": "sync-files dist/css W:\\inetpub\\test.hki.com\\App_Data\\Sitefinity\\WebsiteTemplates\\HKI\\App_Themes\\Glass\\Global",
     "sass:build": "npm-run-all -p build-task:*",
     "sass:watch": "chokidar 'src/scss/**/*.scss' -c 'npm run sass:build'",
     "test": "npm-run-all -s build-task:* sync-test",
-    "live": "npm-run-all -s build-task:* sync-live"
+    "live": "npm-run-all -s build-task:* sync-live",
+    "theme": "npm-run-all -s build-task:* sync-theme"
   },
   "author": "James Harris",
   "license": "UNLICENSED",

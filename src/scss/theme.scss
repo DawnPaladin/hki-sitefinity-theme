@@ -2,15 +2,13 @@
 
 // globals
 
-h2 {
-	font-weight: 500;
-	margin-top: 0;
+body {
+	font-family: "Roboto", sans-serif;
 }
 
-// header
-
 .header {
-	@include background-blur(5px, .65, $header-bg-img, $header-bg-img-offset - 58%);
+	//@include background-blur(5px, rgba(36, 57, 89, .65), $header-bg-img, $header-bg-img-offset - 58%);
+	background: linear-gradient(rgba(36, 57, 89, .65), rgba(36, 57, 89, .65)), url('/hki-sitefinity-theme/dist/img/textures/az_subtle.png');
 	a {
 		color: white;
 		transition: color .25s;
@@ -106,6 +104,10 @@ h2 {
 	}
 }
 
+.tiled-bg {
+	background: url('/hki-sitefinity-theme/dist/img/textures/az_subtle.png');
+}
+
 footer {
 	background-image: url('/hki-sitefinity-theme/dist/img/textures/dark-brushed-metal.jpg');
 	color: $text-color;
@@ -155,8 +157,4 @@ footer {
 		display: inline;
 		margin-right: .75em;
 	}
-}
-
-#PublicWrapper > .sf_cols {
-	@include background-blur(25px, .25, $header-bg-img, $header-bg-img-offset - 58%);
 }
