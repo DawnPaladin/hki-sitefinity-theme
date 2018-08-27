@@ -4,7 +4,7 @@
 
 Visit http://test.hki.com/Sitefinity/Pages?lang=en and click "Create a Page". (If you're creating a page inside a group, find the "Group page" for that group, click the Actions dropdown to the right of it, and click "Create a child page".)
 
-Type in a name for the page. In the "Template" section, choose "Select another Template", scroll up to find the HKI Glass template, select it, and click "Done". Click "Create and go to add content" at the bottom of the page.
+Type in a name for the page. The HKI Glass template should be selected by default. Click "Create and go to add content" at the bottom of the page.
 
 ## Lay out the page
 
@@ -12,13 +12,13 @@ Now you need to arrange the content blocks that will hold your text. To match th
 
 ![Content zone](docs/content-zone.png)
 
-Drag a content block from the "Drag widgets" column on the right into the "Drag widgets here" area in the center of the page. *Be sure that your content blocks have the blue margins to their left and right, and they don't run to the edges of the page!* If your content block doesn't have the blue margin visible on either side, drag the gray bar above it until it fits.
+Drag a content block from the "Drag widgets" column on the right into the "Drag widgets here" area in the center of the page. When placing your content blocks, *be sure that they have the blue margins to their left and right, and they don't run to the edges of the page!* If your content block doesn't have the blue margin visible on either side, drag the gray bar above it until it fits.
 
 If you want multiple columns, go into Layout mode (top-right corner), pick a columns layout from "Single and Two Columns", and drag it into the content zone from the picture above. Just as with content blocks, make sure your layout has blue margins to its left and right. When your columns are all set up, switch back to Content mode (top-right corner) and drag content blocks into the layout.
 
 ## Add content
 
-Click the "Edit" button on a content block and type in some content. You can use the formatting controls at the top of the editor to add bolding, links, images, and so forth.
+Click the "Edit" button on a content block (or "Enter content") and type in some content. You can use the formatting controls at the top of the editor to add bolding, links, images, and so forth.
 
 ## Adjust blocks with CSS classes
 
@@ -28,7 +28,7 @@ You may need to add CSS classes to the widgets to get them to look the way you w
 
 The classes included in our theme are as follows:
 
-- `no-margin-top`, `no-margin-bottom`: Widgets normally have margins, which create gaps between them. Use these widgets to remove the margins above or below the widget. (Since each widget usually has a margin above and a margin below it, if you you want to completely eliminate the gap between widgets, you'll need to apply no-margin-top to one and no-margin-bottom to the other.)
+- `no-margin-top`, `no-margin-bottom`: Widgets normally have margins, which create space between them. Use these classes to remove the margins above or below the widget. (Since each widget usually has a margin above and a margin below it, if you you want to completely eliminate the gap between widgets, you'll need to apply `no-margin-top` to one and `no-margin-bottom` to the other.)
 - `denest-list`: Makes the top level of a list not look like a list item. (Useful when the top level of the list is the list's title.)
 
 ## Finishing up
