@@ -57,6 +57,9 @@
 	background-color: #f5f5f5;
 	border-left: 3px solid #ffc527;
 }
+.card {
+	@include card();
+}
 
 // variables
 

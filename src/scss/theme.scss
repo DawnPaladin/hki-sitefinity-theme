@@ -6,6 +6,15 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+.sfPublicWrapper {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	.sf_cols {
+		flex-grow: 1;
+	}
+}
+
 .header {
 	//@include background-blur(5px, rgba(36, 57, 89, .65), $header-bg-img, $header-bg-img-offset - 58%);
 	background: linear-gradient(rgba(36, 57, 89, .65), rgba(36, 57, 89, .65)), url('/hki-sitefinity-theme/dist/img/textures/triangle-tiles.png');
@@ -105,11 +114,12 @@ body {
 }
 
 .main-content-bg {
+	height: 100%;
 	background: linear-gradient(rgba(36, 57, 89, .2), rgba(36, 57, 89, .2)), url('/hki-sitefinity-theme/dist/img/textures/triangle-tiles.png');
 }
 
 .main-content {
-	.sfContentBlock, .sfexpandedListWrp {
+	.sfContentBlock:not(.no-card), .sfexpandedListWrp:not(.no-card) {
 		@include card();
 		h1, h2 {
 			margin-top: 0;
@@ -135,15 +145,17 @@ body {
 			}
 		}
 	}
-	.no-margin-top {
+	.no-margin-top:not(.no-card) {
 		margin-top: 0;
+		padding-top: 0;
 		.sfexpandedListWrp {
 			margin-top: 0;
 			padding-top: 0;
 		}
 	}
-	.no-margin-bottom {
+	.no-margin-bottom:not(.no-card) {
 		margin-bottom: 0;
+		padding-bottom: 0;
 	}
 
 }
