@@ -1,15 +1,7 @@
 // mixins
 
-@mixin regular-emphasis {
-	font-weight: bold;
-}
-@mixin heavy-emphasis {
-	@include regular-emphasis;
-	font-variant: all-petite-caps;
-	text-transform: lowercase;
-}
 @mixin light-emphasis {
-	font-family: "Roboto Condensed", sans-serif;
+	font-family: "Gotham XNarrow SSm A", "Gotham XNarrow SSm B", sans-serif;
 }
 .light-emphasis { @include light-emphasis }
 

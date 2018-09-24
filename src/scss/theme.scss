@@ -3,7 +3,7 @@
 // globals
 
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
 }
 
 .sfPublicWrapper {
@@ -35,31 +35,6 @@ body {
 		@media (max-width: 420px) {
 			display: none;
 		}
-	}
-	.company-name {
-		display: inline-block;
-		font-family: "Roboto", sans-serif;
-		font-weight: 700;
-		font-size: 32px;
-		color: #CCDAE4;
-		line-height: 1em;
-		margin-top: 2px;
-		margin-bottom: 0;
-		text-transform: uppercase;
-	}
-	.company-name .part1 {
-		font-weight: 900;
-	}
-	.company-name .part2 {
-		font-weight: 400;
-	}
-	.home-link .company-tagline {
-		font-family: "Roboto", sans-serif;
-		text-transform: uppercase;
-		font-size: 16px;
-		color: #CCDAE4;
-		font-weight: 400;
-		line-height: 1em;
 	}
 
 	.search-box .btn {
@@ -183,7 +158,10 @@ footer {
 		margin-bottom: 2em;
 	}
 	.smallcaps {
-		@include heavy-emphasis;
+		font-family: "Arial", sans-serif;
+		font-weight: bold;
+		font-variant: small-caps;
+		text-transform: lowercase;
 		color: rgba(169, 169, 169, 1);
 	}
 	.lang-select {
