@@ -10,7 +10,7 @@ body {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	.sf_cols {
+	.sf_cols:nth-child(3) {
 		flex-grow: 1;
 	}
 }
@@ -135,10 +135,11 @@ body {
 
 }
 
-footer {
+.footer {
 	background-image: url('/hki-sitefinity-theme/dist/img/textures/dark-brushed-metal.jpg');
 	color: $text-color;
 	position: relative;
+	padding: 0;
 	&::before {
 		content: '';
 		width: 100%;
@@ -157,14 +158,20 @@ footer {
 		margin-top: 2em;
 		margin-bottom: 2em;
 	}
-	.smallcaps {
+	.smallcaps, .lang-select label {
 		font-family: "Arial", sans-serif;
 		font-weight: bold;
 		font-variant: small-caps;
 		text-transform: lowercase;
 		color: rgba(169, 169, 169, 1);
+		margin-top: 1.5em;
 	}
-	.lang-select {
+
+	.lang-select select{
+		font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+		font-weight: 400;
+		font-variant: normal;
+		text-transform: none;
 		margin: 1em 0;
 		background: #161617;
 		color: $text-color;
