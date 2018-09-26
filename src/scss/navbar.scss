@@ -17,7 +17,6 @@
 	a:link, a:visited, a:hover, a:active {
 		color: white;
 	}
-	a[href="#"] { text-decoration: none; } // no underline for hover-only links
 	ul {
 		list-style: none;
 		list-style-type: none;
@@ -28,7 +27,7 @@
 		position: relative;
 		padding: 0;
 		border-width: 0;
-		&:hover {
+		&:hover, a.sfSel {
 			background: #658ab2;
 		}
 	}
@@ -46,6 +45,11 @@
 	&>ul>li:first-child {
 		margin-left: -1em;
 	}
+	&>ul>li>a {
+		&:hover, &:active, &:focus {
+			text-decoration: none;
+		}
+	}
 
 	// second level
 	ul ul {
@@ -61,10 +65,10 @@
 	li:hover>ul {
 		display: flex;
 	}
-
-	// third level
-	ul ul ul {
-		top: 0%;
-		left: 100%;
+	ul ul>li>a {
+		&:hover, &:active, &:focus {
+			text-decoration: underline;
+		}
 	}
+
 }
