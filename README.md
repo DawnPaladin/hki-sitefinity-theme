@@ -29,6 +29,7 @@ You may need to add CSS classes to the widgets to get them to look the way you w
 The classes included in our theme are as follows:
 
 - `no-margin-top`, `no-margin-bottom`: Widgets normally have margins, which create space between them. Use these classes to remove the margins above or below the widget. (Since each widget usually has a margin above and a margin below it, if you you want to completely eliminate the gap between widgets, you'll need to apply `no-margin-top` to one and `no-margin-bottom` to the other.)
+- `no-padding-top`, `no-padding-bottom`: Same as above, but with padding (inside the box) instead of margins (outside the box). More info: [The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model)
 - `denest-list`: Makes the top level of a list not look like a list item. (Useful when the top level of the list is the list's title.)
 
 ## Finishing up

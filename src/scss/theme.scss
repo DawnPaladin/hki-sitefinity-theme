@@ -122,14 +122,20 @@ body {
 	}
 	.no-margin-top:not(.no-card) {
 		margin-top: 0;
-		padding-top: 0;
 		.sfexpandedListWrp {
 			margin-top: 0;
-			padding-top: 0;
 		}
 	}
 	.no-margin-bottom:not(.no-card) {
 		margin-bottom: 0;
+	}
+	.no-padding-top:not(.no-card) {
+		padding-top: 0;
+		.sfexpandedListWrp {
+			padding-top: 0;
+		}
+	}
+	.no-padding-bottom:not(.no-card) {
 		padding-bottom: 0;
 	}
 
