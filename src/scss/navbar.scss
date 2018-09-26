@@ -1,8 +1,6 @@
 @import "partials.scss";
 
 .navbar-bg {
-	//@include background-blur(5px, rgba(36, 57, 89, .82), $header-bg-img, $header-bg-img-offset - 51%);
-	//overflow: visible;
 	background: linear-gradient(rgba(36, 57, 89, .82), rgba(36, 57, 89, .82)), url('/hki-sitefinity-theme/dist/img/textures/triangle-tiles.png');
 }
 
@@ -10,7 +8,7 @@
 	font-weight: bold;
 	font-size: 16px;
 	margin-bottom: 0; // override main.min.css
-	min-height: 0; // override main.min.css
+	min-height: auto;
 	border: none;
 	a {
 		display: block;
@@ -26,9 +24,10 @@
 		padding-left: 0;
 		margin-bottom: 0;
 	}
-	li {
+	ul.sfNavList > li.k-item {
 		position: relative;
 		padding: 0;
+		border-width: 0;
 		&:hover {
 			background: #658ab2;
 		}
